@@ -45,6 +45,4 @@ CalendarWidget(
 
 ## Additional information
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+For any conserns or quries do reach out the developer on `saadalvi@we-over-i.com` or `saadjavaidalvi@gmail.com`.
