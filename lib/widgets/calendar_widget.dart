@@ -74,19 +74,19 @@ class _CalendarWidgetState extends State<CalendarWidget> {
   }
 
   Widget _calendarMonthView() {
-    DateTime _weekStartDate = DateTime.now();
+    DateTime weekStartDate = DateTime.now();
     return Column(
       children: List.generate(
         6,
         (index) {
           if (index != 0) {
-            _weekStartDate =
+            weekStartDate =
                 _weekInitialWeekStartDateTime.add(Duration(days: 7 * index));
           } else {
-            _weekStartDate = _setInitialWeekDate();
+            weekStartDate = _setInitialWeekDate();
           }
-          if (_weekStartDate.lastDayOfWeek.month != _initialDateTime.month &&
-              _weekStartDate.firstDayOfWeek.month != _initialDateTime.month) {
+          if (weekStartDate.lastDayOfWeek.month != _initialDateTime.month &&
+              weekStartDate.firstDayOfWeek.month != _initialDateTime.month) {
             return Container();
           }
           return CalendarWeekRow(
@@ -111,7 +111,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
               }
               setState(() {});
             },
-            weekStartDateTime: _weekStartDate,
+            weekStartDateTime: weekStartDate,
           );
         },
       ),
@@ -119,11 +119,11 @@ class _CalendarWidgetState extends State<CalendarWidget> {
   }
 
   Widget _calendarHeaderWidget() {
-    const double _iconSizes = 24;
-    String _monthNameString =
+    const double iconSizes = 24;
+    String monthNameString =
         DateFormat('MMMM').format(_initialDateTime).toString();
     if (_initialDateTime.year != DateTime.now().year) {
-      _monthNameString =
+      monthNameString =
           DateFormat('MMMM yyyy').format(_initialDateTime).toString();
     }
 
@@ -148,7 +148,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
               },
               child: const Icon(
                 Icons.arrow_back_ios_new,
-                size: _iconSizes,
+                size: iconSizes,
               ),
             ),
             GestureDetector(
@@ -171,7 +171,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                 );
               },
               child: Text(
-                _monthNameString,
+                monthNameString,
                 style: const TextStyle(
                   fontSize: 20,
                   fontWeight: FontWeight.w500,
@@ -184,7 +184,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
               },
               child: const Icon(
                 Icons.arrow_forward_ios,
-                size: _iconSizes,
+                size: iconSizes,
               ),
             ),
           ],
@@ -194,7 +194,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
   }
 
   Widget _calendarWeekDayWidget() {
-    List<String> _weekInitials = ['M', 'T', 'W', 'T', 'F', 'S', 'S'];
+    List<String> weekInitials = ['M', 'T', 'W', 'T', 'F', 'S', 'S'];
     return Container(
       margin: widget.weekDaysMargin ??
           const EdgeInsets.only(
@@ -204,10 +204,10 @@ class _CalendarWidgetState extends State<CalendarWidget> {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: List.generate(
-          _weekInitials.length,
+          weekInitials.length,
           (index) => Expanded(
             child: Text(
-              _weekInitials[index],
+              weekInitials[index],
               textAlign: TextAlign.center,
             ),
           ),
