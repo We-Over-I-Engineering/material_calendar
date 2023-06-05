@@ -11,7 +11,7 @@ and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/developing-packages).
 -->
 
-Enhance your calendar experience with Flutter Calendar, a convenient plugin designed to enhance your calendar experience. With its powerful feature, Flutter Calendar allows you to effortlessly choose specific date from your calendar with just a few clicks
+Enhance your calendar experience with Flutter Calendar Widget, a convenient plugin designed to enhance your calendar experience. With its powerful feature, Flutter Calendar allows you to effortlessly choose specific date from your calendar with just a few clicks
 
 ## Features
 
