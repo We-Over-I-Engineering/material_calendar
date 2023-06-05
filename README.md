@@ -15,7 +15,7 @@ Enhance your calendar experience with Flutter Calendar, a convenient plugin desi
 
 ## Features
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+You can use the calendar in your code for the either selecting a month or selecting a single day for any thing.
 
 
 ## Getting started
