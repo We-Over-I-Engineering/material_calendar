@@ -187,7 +187,7 @@ class _MonthYearViewSheetState extends State<MonthYearViewSheet> {
                   });
                 },
                 isSelected:
-                    _yearList[_currentIndex][0] + index == _yearSelected,
+                    _yearList[_currentIndex][0] + index == widget.dateTime.year,
                 isDisabled:
                     _yearIsDisabled(_yearList[_currentIndex][0] + index),
               ),
