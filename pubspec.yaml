@@ -1,7 +1,7 @@
 name: flutter_calendar_plugin
 description: A new Flutter package project.
 version: 0.0.1
-# homepage: ""
+homepage: "https://github.com/saadjavaidalvi-weoveri/flutter_calendar"
 
 environment:
   sdk: ">=2.19.6 <3.0.0"
@@ -10,6 +10,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  dartx: ^1.1.0
+  intl: ^0.18.1
 
 dev_dependencies:
   flutter_test:
