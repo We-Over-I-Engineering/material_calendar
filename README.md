@@ -11,12 +11,12 @@ and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/developing-packages).
 -->
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+Enhance your calendar experience with Flutter Calendar, a convenient plugin designed to enhance your calendar experience. With its powerful feature, Flutter Calendar allows you to effortlessly choose specific date from your calendar with just a few clicks
 
 ## Features
 
 TODO: List what your package can do. Maybe include images, gifs, or videos.
+
 
 ## Getting started
 
@@ -25,12 +25,23 @@ start using the package.
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
+While calling the calendar widget would do the job but only `initialDateTime` field is required.
 
 ```dart
-const like = 'sample';
+CalendarWidget(
+    initalDateTime: DateTime.now(),
+    onTap: (DateTime dateTime) {},
+)
 ```
+
+|Parameter|Description|
+|-----------------------------------|--------------------------------------|
+|initalDateTime   |is the initial DateTime calue required by the calendar to show that month|
+|selectedDate    |Any day to be selected at the start, default would be the current day selected|
+|startLimit      |is the start Limit Date for the calendar|
+|endLimit |The end limit Date for the calendar|
+|onTap |This will return `DateTime` instance on tap of the perticular day|
+|monthYearOverlayValueDecorator |This is the decorator for the overlay that will have the option for selecting month or year while tapping from the header month name text in the main calendar|
 
 ## Additional information
 
