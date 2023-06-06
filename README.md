@@ -44,7 +44,7 @@ CalendarWidget(
 |startLimit      |is the start Limit Date for the calendar|
 |endLimit |The end limit Date for the calendar|
 |onTap |This will return `DateTime` instance on tap of the perticular day|
-|monthYearOverlayValueDecorator |This is the decorator for the overlay that will have the option for selecting month or year while tapping from the header month name text in the main calendar|
+<!-- |monthYearOverlayValueDecorator |This is the decorator for the overlay that will have the option for selecting month or year while tapping from the header month name text in the main calendar| -->
 
 ## Additional information
 
