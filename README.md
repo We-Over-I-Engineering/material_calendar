@@ -15,11 +15,21 @@ You can use the calendar for either selecting a month or a single day in the mos
 
 Import the plugin and call the `CalendarWidget` and you are good to go... 🎉
 
+```yaml
+# add this line to your dependencies
+custom_calendar: ^0.0.1
+```
+
+```dart
+import 'package:custom_calendar/widgets/calendar_widget.dart';
+```
+
 ## Usage
 
 As simple as using a Container widget just call the `CalendarWidget`.
 
 Although `initialDateTime` is required to show the inital calendar month.
+
 
 ```dart
 CalendarWidget(

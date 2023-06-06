@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_calendar/widgets/calendar_widget.dart';
+import 'package:custom_calendar/widgets/calendar_widget.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
