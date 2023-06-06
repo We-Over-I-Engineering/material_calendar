@@ -25,12 +25,13 @@ start using the package.
 
 ## Usage
 
-While calling the calendar widget would do the job but only `initialDateTime` field is required.
+As simple as using a Container widget just call the `CalendarWidget` and all done.
+While calling the calendar widget would do the job but `initialDateTime` field is required.
 
 ```dart
 CalendarWidget(
     initalDateTime: DateTime.now(),
-    onTap: (DateTime dateTime) {},
+    onTap: (DateTime dateTime) {}, // Optional
 )
 ```
 
@@ -45,4 +46,4 @@ CalendarWidget(
 
 ## Additional information
 
-For any conserns or quries do reach out the developer on `saadalvi@we-over-i.com` or `saadjavaidalvi@gmail.com`.
+Incase of any issues or assistance please reach out on [Work Email](mailto:saad@we-over-i.com?subject=[Gilab]%20Source%Files%20for%20Wild) or [Personal Email](mailto:saadjavaidalvi@gmail.com?subject=[Gilab]%20Source%Files%20for%20Wild)
