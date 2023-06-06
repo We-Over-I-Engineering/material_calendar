@@ -13,6 +13,8 @@ and the Flutter guide for
 
 Enhance your calendar experience with Flutter Calendar Widget, a convenient plugin designed to enhance your calendar experience. With its powerful feature, Flutter Calendar allows you to effortlessly choose specific date from your calendar with just a few clicks
 
+![flutter_calendar_plugin](https://github.com/saadjavaidalvi-weoveri/flutter_calendar/assets/85175211/3ed8ec1c-c731-4613-947d-92c0c98c81e4)
+
 ## Features
 
 You can use the calendar in your code for the either selecting a month or selecting a single day for any thing.
