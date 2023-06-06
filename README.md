@@ -1,34 +1,25 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+## Your clean and simple calendar companion
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages).
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages).
--->
+Enhance your calendar experience with Flutter Calendar Widget, a convenient plugin designed to enhance your calendar experience.
 
-Enhance your calendar experience with Flutter Calendar Widget, a convenient plugin designed to enhance your calendar experience. With its powerful feature, Flutter Calendar allows you to effortlessly choose specific date from your calendar with just a few clicks
 
 ![flutter_calendar_plugin](https://github.com/saadjavaidalvi-weoveri/flutter_calendar/assets/85175211/3ed8ec1c-c731-4613-947d-92c0c98c81e4)
 
 ## Features
 
-You can use the calendar in your code for the either selecting a month or selecting a single day for any thing.
+You can use the calendar for either selecting a month or a single day in the most clean way possible. ✨
 
 
 ## Getting started
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+Import the plugin and call the `CalendarWidget` and you are good to go... 🎉
 
 ## Usage
 
-As simple as using a Container widget just call the `CalendarWidget` and all done.
-While calling the calendar widget would do the job but `initialDateTime` field is required.
+As simple as using a Container widget just call the `CalendarWidget`.
+
+Although `initialDateTime` is required to show the inital calendar month.
 
 ```dart
 CalendarWidget(
