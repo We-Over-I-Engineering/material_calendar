@@ -1,4 +1,4 @@
-library flutter_calendar_widget;
+library custom_calendar;
 
-export 'package:flutter_calendar_widget/widgets/calendar_widget.dart';
-export 'package:flutter_calendar_widget/widgets/day_cell.dart';
+export 'package:custom_calendar/widgets/calendar_widget.dart';
+export 'package:custom_calendar/widgets/day_cell.dart';
