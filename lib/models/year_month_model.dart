@@ -1,5 +1,11 @@
 import 'package:flutter/material.dart';
 
+/// The decorator for the overlay which with the month and year selection options
+///
+/// `color` is the background color for the circles
+///
+/// `borderColor` is to update border colors ot each circles
+///
 class CircularDecorator {
   Color? selectedColor;
   TextStyle? textStyle;

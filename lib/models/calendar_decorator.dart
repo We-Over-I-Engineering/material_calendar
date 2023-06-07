@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 
+/// The model for the decoration of Whole calendar widget
+///
+/// For now it only supports the `backgroundColor` field
 class CalendarDecorator {
   Color? backgroundColor;
   CalendarDecorator({

@@ -3,6 +3,14 @@ import 'package:flutter/material.dart';
 import '../models/cell_design_model.dart';
 import 'day_cell.dart';
 
+/// A row of a week that starts from the [Monday] and ends on the [Sunday]
+///
+/// The [calendarWidget] is made from using this widget in a column creating a month view
+///
+/// `initalDateTime` will be required to filter out of the month days from the week view
+///
+/// `weekStartDateTime` will be the starting point of the week which would be Monday and then the rest days would follow along
+///
 class CalendarWeekRow extends StatefulWidget {
   final DateTime initalDateTime;
   final DateTime? selectedDate;

@@ -1,13 +1,20 @@
 import 'package:flutter/material.dart';
 import '../models/cell_design_model.dart';
 
-/// Widget for a single cell of the calendar
+/// A single cell widget of the calendar with the date
 ///
+/// `dateTime` is the required field and the rest will only show a simple clean white background rounded border box with the date number inside
+///
+/// `currentDay` variable is select that cell by making it darker
+///
+/// You can always change the decorations of the cell by using `cellDecorator` or to change the currentDay decorator by `currentDayDec`
+/// `isWeekend` boolean will result on changing the decoration for the cell
+
 class DayCell extends StatefulWidget {
   final String number;
   final bool currentDay;
   final bool selectedDay;
-  final String headerText;
+  // final String headerText;
   final bool isWeekend;
   final CalendarCellDecorator? cellDecorator;
   final CalendarCellDecorator? currentDayDec;
@@ -21,7 +28,7 @@ class DayCell extends StatefulWidget {
     this.number = '1',
     this.currentDay = false,
     this.selectedDay = false,
-    this.headerText = '',
+    // this.headerText = '',
     this.isWeekend = false,
     this.dayInMonth = true,
     this.onTap,

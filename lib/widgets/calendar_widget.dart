@@ -10,7 +10,15 @@ import 'month_year_view.dart';
 /// A widget that has monthly view with all of the calendar including the header
 /// with the month name and the icons
 /// to toggle between months
-/// [onTap] action is triggered on tapping on the specific day
+/// `onTap` action is triggered on tapping on the specific day.
+///
+///
+
+///`monthYearOverlayValueDecorator` is the decorator of the month and year view on tap of the header month text.
+///You can update the color for circular container, text and and norder.
+///
+///Use `calendarDecorator` for declearing background color for the widget
+
 class CalendarWidget extends StatefulWidget {
   final DateTime initalDateTime;
   final DateTime? selectedDate;

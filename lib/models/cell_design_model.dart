@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 
+/// The class model for the [DayCell] widget used to update the colors and styles of a single cell in a calendar
+///
+///
 class CalendarCellDecorator {
   Color? color;
   Color? contentColor;

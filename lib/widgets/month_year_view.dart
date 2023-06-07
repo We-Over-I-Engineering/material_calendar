@@ -3,7 +3,13 @@ import 'package:flutter/material.dart';
 
 import '../models/year_month_model.dart';
 
-/// A widget that has monthly view and year view which can be toggles by tapping on the header month or year text
+/// This widget shows the month and year view overlay
+///
+/// `onTap` will result the selected month
+///
+/// You can choose the `startLimit` and `endLimit` of that overlay to show
+///
+/// The initial month and year of the overlay will depend on the `dateTime` value
 class MonthYearViewSheet extends StatefulWidget {
   final DateTime dateTime;
   final Function(DateTime) onTap;
