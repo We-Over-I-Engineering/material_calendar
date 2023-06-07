@@ -45,7 +45,7 @@ dependencies:
   flutter_keyboard_visibility: ^5.4.1
   font_awesome_flutter: ^10.4.0
   flutter_colorpicker: ^1.0.3
-  custom_calendar:
+  material_calendar:
     path: ../
 
   # The following adds the Cupertino Icons font to your application.

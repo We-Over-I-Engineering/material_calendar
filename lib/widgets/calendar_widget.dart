@@ -1,6 +1,6 @@
 import 'package:dartx/dartx.dart';
 import 'package:flutter/material.dart';
-import 'package:custom_calendar/models/year_month_model.dart';
+import 'package:material_calendar/models/year_month_model.dart';
 import 'package:intl/intl.dart';
 import '../models/calendar_decorator.dart';
 import 'week_calendar.dart';

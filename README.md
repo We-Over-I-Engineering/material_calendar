@@ -17,11 +17,11 @@ Import the plugin and call the `CalendarWidget` and you are good to go... 🎉
 
 ```yaml
 # add this line to your dependencies
-custom_calendar: ^0.0.1
+material_calendar: ^0.0.2
 ```
 
 ```dart
-import 'package:custom_calendar/widgets/calendar_widget.dart';
+export 'package:material_calendar/widgets/calendar_widget.dart';
 ```
 
 ## Usage
@@ -49,4 +49,6 @@ CalendarWidget(
 
 ## Additional information
 
-Incase of any issues or assistance please reach out on [Work Email](mailto:saad@we-over-i.com?subject=[Gilab]%20Source%Files%20for%20Wild) or [Personal Email](mailto:saadjavaidalvi@gmail.com?subject=[Gilab]%20Source%Files%20for%20Wild)
+Incase of any issues or assistance please reach out on [saad@we-over-i.com](mailto:saad@we-over-i.com) or [saadjavaidalvi@gmail.com](mailto:saadjavaidalvi@gmail.com)
+
+Have Fun!

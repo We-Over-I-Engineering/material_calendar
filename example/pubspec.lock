@@ -169,13 +169,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.0.5"
-  custom_calendar:
-    dependency: "direct main"
-    description:
-      path: ".."
-      relative: true
-    source: path
-    version: "0.0.1"
   dart_style:
     dependency: transitive
     description:
@@ -439,6 +432,13 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "0.12.13"
+  material_calendar:
+    dependency: "direct main"
+    description:
+      path: ".."
+      relative: true
+    source: path
+    version: "0.0.2"
   material_color_utilities:
     dependency: transitive
     description:
