@@ -1,6 +1,6 @@
 name: material_calendar
 description: A Flutter package for calendar widget.
-version: 0.0.2
+version: 0.0.3
 homepage: "https://github.com/saadjavaidalvi-weoveri/flutter_calendar"
 
 environment:

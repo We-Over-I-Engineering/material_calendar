@@ -17,7 +17,7 @@ Import the plugin and call the `CalendarWidget` and you are good to go... 🎉
 
 ```yaml
 # add this line to your dependencies
-material_calendar: ^0.0.2
+material_calendar: ^0.0.3
 ```
 
 ```dart
