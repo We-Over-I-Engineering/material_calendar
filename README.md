@@ -21,7 +21,7 @@ material_calendar: ^0.0.4
 ```
 
 ```dart
-export 'package:material_calendar/widgets/calendar_widget.dart';
+import 'package:material_calendar/widgets/calendar_widget.dart';
 ```
 
 ## Usage
