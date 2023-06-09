@@ -14,7 +14,6 @@ class DayCell extends StatefulWidget {
   final String number;
   final bool currentDay;
   final bool selectedDay;
-  // final String headerText;
   final bool isWeekend;
   final CalendarCellDecorator? cellDecorator;
   final CalendarCellDecorator? currentDayDec;
@@ -28,7 +27,6 @@ class DayCell extends StatefulWidget {
     this.number = '1',
     this.currentDay = false,
     this.selectedDay = false,
-    // this.headerText = '',
     this.isWeekend = false,
     this.dayInMonth = true,
     this.onTap,
@@ -69,7 +67,7 @@ class _DayCellState extends State<DayCell> {
                       (widget.dayInMonth
                           ? widget.isWeekend
                               ? const Color(0xffF1F0F0)
-                              : Colors.white /* const Color(0xffF6F6F6) */
+                              : Colors.white
                           : const Color(0xffF6F6F6)),
                   borderRadius: const BorderRadius.all(
                     Radius.circular(8),
@@ -77,51 +75,6 @@ class _DayCellState extends State<DayCell> {
                 ),
                 child: Stack(
                   children: [
-                    /* Column(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        const Padding(
-                          padding: EdgeInsets.only(left: 2),
-                          // cmargin(
-                          //   left: 2,
-                          // ),
-                          child: SizedBox(
-                            height: (13),
-                          ),
-                        ),
-                        Container(
-                          margin: const EdgeInsets.only(left: 2),
-                          // cmargin(bottom: 4),
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
-                              Container(
-                                padding: widget.headerText.isEmpty
-                                    ? null
-                                    : const EdgeInsets.only(
-                                        left: 6,
-                                        right: 4,
-                                      ),
-                                child: AutoSizeText(
-                                  widget.headerText.isEmpty
-                                      ? ''
-                                      : widget.headerText,
-                                  /* style: MyCustomTextStyles()
-                                      .paragrahSmall
-                                      .copyWith(
-                                        color: widget
-                                                .cellDecorator?.contentColor ??
-                                            Colors.white,
-                                        height: HelperMethods()
-                                            .getMyDynamicHeight(1),
-                                      ), */
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ],
-                    ), */
                     Container(
                       decoration: BoxDecoration(
                         borderRadius: const BorderRadius.all(

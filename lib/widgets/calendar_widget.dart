@@ -81,6 +81,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
     );
   }
 
+  /// The only month section with the [Daycell] widgets representing the date
   Widget _calendarMonthView() {
     DateTime weekStartDate = DateTime.now();
     return Column(
@@ -126,6 +127,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
     );
   }
 
+  /// The header of the calendar that will have the icons for navigating between months and text with showing month name
   Widget _calendarHeaderWidget() {
     const double iconSizes = 24;
     String monthNameString =
@@ -201,6 +203,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
     );
   }
 
+  /// The row with the week days initials that will help in understand the day of the week
   Widget _calendarWeekDayWidget() {
     List<String> weekInitials = ['M', 'T', 'W', 'T', 'F', 'S', 'S'];
     return Container(
@@ -270,10 +273,8 @@ class _CalendarWidgetState extends State<CalendarWidget> {
     _selectedDate = widget.selectedDate;
     _onTap = widget.onTap;
 
-    _startLimit =
-        widget.startLimit ?? /* DateTime.now() */ DateTime(1898, 1, 1);
+    _startLimit = widget.startLimit ?? DateTime(1898, 1, 1);
     _startLimit = _startLimit.copyWith(
-      // day: 1,
       hour: 0,
       microsecond: 0,
       millisecond: 0,
@@ -282,7 +283,6 @@ class _CalendarWidgetState extends State<CalendarWidget> {
     );
     _endLimit = widget.endLimit ?? DateTime(2100, 12, 31);
     _endLimit = _endLimit.copyWith(
-      // day: _endLimit.lastDayOfMonth.day,
       hour: 0,
       microsecond: 0,
       millisecond: 0,
