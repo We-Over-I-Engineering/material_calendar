@@ -30,6 +30,7 @@ class CalendarWidget extends StatefulWidget {
   final Function(DateTime)? onTap;
   final CircularDecorator? monthYearOverlayValueDecorator;
   final CalendarDecorator? calendarDecorator;
+  final bool showCurrentDay;
 
   const CalendarWidget({
     Key? key,
@@ -43,6 +44,7 @@ class CalendarWidget extends StatefulWidget {
     this.onTap,
     this.monthYearOverlayValueDecorator,
     this.calendarDecorator,
+    this.showCurrentDay = true,
   }) : super(key: key);
 
   @override
@@ -100,7 +102,7 @@ class _CalendarWidgetState extends State<CalendarWidget> {
           }
           return CalendarWeekRow(
             initalDateTime: _initialDateTime,
-            showCurrentDay: true,
+            showCurrentDay: widget.showCurrentDay,
             showOutOfMonthCells: false,
             currentDayDecorator: CalendarCellDecorator(
               color: Colors.black,
