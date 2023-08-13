@@ -1,6 +1,6 @@
 name: material_calendar
 description: Power up your Flutter app with a sleek and intuitive Material calendar experience.
-version: 0.0.6
+version: 0.0.7
 homepage: "https://github.com/saadjavaidalvi-weoveri/flutter_calendar"
 
 environment:
